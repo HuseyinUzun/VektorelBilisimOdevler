@@ -1,0 +1,38 @@
+
+Design Patterns Ödevi
+
+“Desıgn Pattern’lar nelerdir? “ sorusuna gelin beraber cevap arayalım.
+
+Design pattern'lar, yazılım tasarımı sırasında karşılaşılan yaygın sorunlara çözüm sunan, tekrar kullanılabilir ve uygulanabilir yapılar olarak tanımlanabilir.
+ 
+Tasarım desenleri, yazılım sisteminde nesnelerin oluşturulmasıyla ilgili olan ve bu nesnelerin yönetimini sağlayan desenlerdir.
+
+
+ 
+                  ‘OOP kapsamında yaygın olarak kullanılan bazı Design Pattern'lar’
+
+Bu pattern’lardan Factory methodu, örneklerle açıklayacak olursam,
+
+Factory method (Fabrika yöntemi)
+
+abstract class Oyun
+{
+    public abstract void Platform();
+}
+
+Oyunlarımı türeteceğim abstract class’ı oluşturduk.
+
+Bir sonraki kod bölümünde bu “Oyun” abstract class’ından bu ürünleri(Playstation,Bilgisayar,Konsol)türetelim.
+
+class PC : Oyun
+{
+    public override void Platform()
+    {
+        Console.WriteLine("Bu oyun PC platformunda oynanmaktadır.");
+    }
+}
+
+
+
+
+
