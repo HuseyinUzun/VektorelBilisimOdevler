@@ -11,7 +11,7 @@ Tasarım desenleri, yazılım sisteminde nesnelerin oluşturulmasıyla ilgili ol
                                             .img
                   ‘OOP kapsamında yaygın olarak kullanılan bazı Design Pattern'lar’
 
-Bu pattern’lardan Factory methodu, örneklerle açıklayacak olursam,
+Bu pattern’lardan Factory methodu, örneklerle açıklayayım,
 
 Factory method (Fabrika yöntemi)
 
@@ -20,9 +20,9 @@ abstract class Oyun
     public abstract void Platform();
 }
 
-Oyunlarımı türeteceğim abstract class’ı oluşturduk.
+Oyunlarımı türeteceğim abstract class’ı oluşturdum.
 
-Bir sonraki kod bölümünde bu “Oyun” abstract class’ından bu ürünleri(Playstation,Bilgisayar,Konsol)türetelim.
+Bir sonraki kod bölümünde bu “Oyun” abstract class’ından bu ürünleri(Playstation,Bilgisayar,Konsol)türettim.
 
 class PC : Oyun
 {
@@ -31,6 +31,7 @@ class PC : Oyun
         Console.WriteLine("Bu oyun PC platformunda oynanmaktadır.");
     }
 }
+
 
 
 
